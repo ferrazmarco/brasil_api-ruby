@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Simple wraper for Brasil API."
   spec.description = "Simple wraper for Brasil API."
-  # spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage = "https://github.com/marco-a-ferraz/brasil_api-ruby"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
