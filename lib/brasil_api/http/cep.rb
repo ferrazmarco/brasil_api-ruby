@@ -11,7 +11,7 @@ module BrasilApi
       # @param zipcode [String]
       # @return [Hash]
       def cep(zipcode)
-        request :get, "#{PATH}/#{zipcode}"
+        Http.request :get, "#{PATH}/#{zipcode}"
       end
     end
   end
