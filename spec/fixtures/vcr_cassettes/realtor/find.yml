@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cvm/corretoras/v1/02332886000104
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Sep 2023 21:17:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"221-gg+b/ydFCnzwtofG03uYJ6Dr6Zg"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cvm/corretoras/v1/[cnpj]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - gru1::sfo1::vm2xt-1693948655092-84c385a95a02
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jSsOSXmM7NqEIZmJiitW8VmbY1XtaPpNtEgI7Ja6u5Zne2MMoS27aQ1Q4Oa9IHxdpRDdZFi7bcf85FIvqbZIpOCbNNEZKyaPfAV6kFk3v1PyxqkHNA3ygy9yd8fuTy54yeeN"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 80217ff63f98c19b-EZE
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjbnBqIjoiMDIzMzI4ODYwMDAxMDQiLCJ0eXBlIjoiQ09SUkVUT1JBUyIsIm5vbWVfc29jaWFsIjoiWFAgSU5WRVNUSU1FTlRPUyBDQ1RWTSBTLkEuIiwibm9tZV9jb21lcmNpYWwiOiJYUCBJTlZFU1RJTUVOVE9TIiwic3RhdHVzIjoiRU0gRlVOQ0lPTkFNRU5UTyBOT1JNQUwiLCJlbWFpbCI6Imx1Y2FzLnJhYmVjaGluaUB4cGkuY29tLmJyIiwidGVsZWZvbmUiOiIzMDI3MjIzNyIsImNlcCI6IjIyNDQwMDMyIiwicGFpcyI6IkVHSVRPIiwidWYiOiJSSiIsIm11bmljaXBpbyI6IlJJTyBERSBKQU5FSVJPIiwiYmFpcnJvIjoiTEVCTE9OIiwiY29tcGxlbWVudG8iOiI1wrogQW5kYXIiLCJsb2dyYWRvdXJvIjoiQVZFTklEQSBBVEFVTEZPIERFIFBBSVZBIDE1MyIsImRhdGFfcGF0cmltb25pb19saXF1aWRvIjoiMjAyMi0xMi0zMSIsInZhbG9yX3BhdHJpbW9uaW9fbGlxdWlkbyI6IjgyODg5MDQzNjkuNTgiLCJjb2RpZ29fY3ZtIjoiMzI0NyIsImRhdGFfaW5pY2lvX3NpdHVhY2FvIjoiMTk5OC0wMi0xMCIsImRhdGFfcmVnaXN0cm8iOiIxOTk3LTEyLTA1In0=
+  recorded_at: Tue, 05 Sep 2023 21:17:37 GMT
+recorded_with: VCR 6.2.0
