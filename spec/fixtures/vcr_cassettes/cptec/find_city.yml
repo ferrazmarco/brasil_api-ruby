@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/cidade/praia+grande
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Sep 2023 22:00:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"61-q1HHQQA2dYUQptSx0LbxPmUFLJM"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/cidade/[name]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - iad1::sfo1::9kwc4-1693951208183-9222ab9f9062
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BBkG1uZs%2BjcS4GwLDNdYBKxOF9rAvPrqGxYvQBA2MZKxVle430c%2FdtTlk6MAceFdNp1URhKky2z9deTkwu%2BpgtimhSVMn1JW6KcoClyizu%2F%2Fg%2BWur%2BvNBGlVI6unKGg0f7wf"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8021be4b09ad9ab4-MIA
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"nome":"Praia Grande","id":4178,"estado":"SP"},{"nome":"Praia Grande","id":4179,"estado":"SC"}]'
+  recorded_at: Tue, 05 Sep 2023 22:00:08 GMT
+recorded_with: VCR 6.2.0
