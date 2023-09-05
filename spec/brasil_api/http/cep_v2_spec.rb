@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe BrasilApi::Cep do
+RSpec.describe BrasilApi::CepV2 do
   it "find a valid zipcode" do
     response = described_class.find("01311914")
 

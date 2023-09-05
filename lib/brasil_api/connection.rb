@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "faraday"
-require "byebug"
 
 module BrasilApi
   # HTTP connection to Brasil API
@@ -10,7 +9,7 @@ module BrasilApi
 
     # @return Faraday::Connection
     def connection
-      @connection ||= Faraday.new do |conn|
+      @connection = Faraday.new do |conn|
         conn.url_prefix = API_ENDPOINT
         conn.request :json
         conn.response :json, content_type: "application/json"

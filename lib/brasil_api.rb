@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 require_relative "brasil_api/version"
-require_relative "brasil_api/client"
+
+# require http objects
+Dir["./lib/brasil_api/http/**/*.rb"].sort.each do |file|
+  require file
+end
 
 module BrasilApi
-  class Error < StandardError; end
-  # Your code goes here...
 end

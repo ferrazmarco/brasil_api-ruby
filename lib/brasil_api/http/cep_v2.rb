@@ -2,9 +2,9 @@
 
 module BrasilApi
   # https://brasilapi.com.br/docs#tag/CEP
-  class Cep < Base
+  class CepV2 < Base
     class << self
-      PATH = "cep/v1"
+      PATH = "cep/v2"
 
       # Get a CEP info
       #
