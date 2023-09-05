@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cep/v1/01311914
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Sep 2023 14:11:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '189'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"85-5FS8npEMcvG9VlRDNzojYqiUSGU"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cep/v1/[cep]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - gru1::sfo1::ldp9l-1693923076426-5be78d31d55b
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cPXdBEzLGzkdRXvwiYNjN4Hfs60Cn%2Fa6cJHp50zdWdQmgTJo5X%2BvQFxWcGbP2NF%2FbpXCPkBxR2VNJ3xz1aiU0CcdsE1cLvBto6J6LdBUGoYdTJMqLVcMfK23c0atVCKyHpJT"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 801f0f7b8ce2a623-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjZXAiOiIwMTMxMTkxNCIsInN0YXRlIjoiU1AiLCJjaXR5IjoiU8OjbyBQYXVsbyIsIm5laWdoYm9yaG9vZCI6IkJlbGEgVmlzdGEiLCJzdHJlZXQiOiJBdmVuaWRhIFBhdWxpc3RhLCA3NzciLCJzZXJ2aWNlIjoiY29ycmVpb3MifQ==
+  recorded_at: Tue, 05 Sep 2023 14:11:16 GMT
+recorded_with: VCR 6.2.0

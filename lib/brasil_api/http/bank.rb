@@ -7,7 +7,7 @@ module BrasilApi
       BASE_URL = "banks/v1"
 
       # @return [Array<Hash>]
-      def list
+      def all
         request :get, BASE_URL
       end
 
