@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/clima/previsao/4178/3
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Sep 2023 22:31:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"185-g+xaEGBwQa7ieqFOslXT88uDk8o"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/clima/previsao/[cityCode]/[days]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - iad1::sfo1::fqbcz-1693953115537-4c64be8eeed2
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=zGP%2BXgm84LQixILzDZNtxw8Rq9evmrKbm8NMH8q0HFUe7peh2xzLPmo8O4O3ANZWGmed4xVOl0MVWNFqRFpQcRo4Ji2ogEhu8LUFFXuxsy0MHuHoliPsKfqqtw%2FFYB3MDgrr"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8021ecdc0e7ac354-EWR
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"cidade":"Praia Grande","estado":"SP","atualizado_em":"2023-09-04","clima":[{"data":"2023-09-06","condicao":"c","condicao_desc":"Chuva","min":18,"max":21,"indice_uv":8},{"data":"2023-09-07","condicao":"pn","condicao_desc":"Parcialmente
+        Nublado","min":17,"max":24,"indice_uv":8},{"data":"2023-09-08","condicao":"pn","condicao_desc":"Parcialmente
+        Nublado","min":18,"max":29,"indice_uv":9}]}'
+  recorded_at: Tue, 05 Sep 2023 22:31:56 GMT
+recorded_with: VCR 6.2.0

@@ -25,6 +25,5 @@ module BrasilApi
         conn.adapter Faraday.default_adapter
       end
     end
-
   end
 end

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/clima/previsao/4178
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Sep 2023 22:31:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '130'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"ab-dAAWxProYGwLudIwjKf4ea3Eqsc"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/clima/previsao/[cityCode]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - iad1::sfo1::6xk2v-1693953114957-edead8f4ac86
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BY4uw3JMkdbR3ZhwdSLhc3WbgbvCnUw7E25HeHfEEtaEItMsvseJNoDnQdOE8y8kYBg4tGvdZdXeHKDa8UIm3AIrXvU1lRViYxVtq1KRPHvnEq6357VawtesyB6XL%2BklTPmF"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8021ecd85ecd42e4-EWR
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"cidade":"Praia Grande","estado":"SP","atualizado_em":"2023-09-04","clima":[{"data":"2023-09-06","condicao":"c","condicao_desc":"Chuva","min":18,"max":21,"indice_uv":8}]}'
+  recorded_at: Tue, 05 Sep 2023 22:31:54 GMT
+recorded_with: VCR 6.2.0
