@@ -2,7 +2,7 @@
 
 module BrasilApi
   # https://brasilapi.com.br/docs#tag/CEP
-  class Cep < Base
+  class CEP < Base
     class << self
       PATH = "cep/v1"
 

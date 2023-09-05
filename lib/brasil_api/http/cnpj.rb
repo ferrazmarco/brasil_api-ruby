@@ -2,7 +2,7 @@
 
 module BrasilApi
   # https://brasilapi.com.br/docs#tag/CNPJ
-  class Cnpj < Base
+  class CNPJ < Base
     class << self
       BASE_URL = "cnpj/v1"
 

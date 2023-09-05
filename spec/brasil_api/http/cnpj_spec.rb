@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe BrasilApi::Cnpj do
+RSpec.describe BrasilApi::CNPJ do
   it "find a valid cnpj" do
     VCR.use_cassette("cnpj/find") do
       response = described_class.find("51733354000186")
