@@ -6,6 +6,6 @@ RSpec.describe BrasilApi::Connection do
   let(:klass) { Class.new { extend BrasilApi::Connection } }
 
   it "should stablish a connection" do
-    expect(klass.connection).to be_a(Faraday::Connection)
+    expect(klass.send(:connection)).to be_a(Faraday::Connection)
   end
 end
