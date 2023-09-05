@@ -9,6 +9,5 @@ RSpec.describe BrasilApi::CepV2 do
 
       expect(response).to be_a(Hash)
     end
-
   end
 end
