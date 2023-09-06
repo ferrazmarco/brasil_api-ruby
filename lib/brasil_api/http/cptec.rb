@@ -13,14 +13,14 @@ module BrasilApi
       def cities(city_name = "")
         path = city_name.empty? ? "#{BASE_URL}/cidade" : "#{BASE_URL}/cidade/#{encode_string(city_name)}"
 
-        request :get, path
+        request path
       end
 
       # list the weather in capital
       #
       # @return [Array<Hash>]
       def weather_capitals
-        request :get, "#{BASE_URL}/clima/capital"
+        request "#{BASE_URL}/clima/capital"
       end
 
       # list the weather in airports
@@ -28,7 +28,7 @@ module BrasilApi
       # @param airport_code [String]
       # @return [Hash]
       def weather_airports(airport_code)
-        request :get, "#{BASE_URL}/clima/aeroporto/#{airport_code}"
+        request "#{BASE_URL}/clima/aeroporto/#{airport_code}"
       end
 
       # list the forecast weather of a city
@@ -40,7 +40,7 @@ module BrasilApi
         path = "#{BASE_URL}/clima/previsao/#{city_code}"
         path += "/#{days}" unless days.nil?
 
-        request :get, path
+        request path
       end
 
       # fetch the ocean forecast given a city code
@@ -52,7 +52,7 @@ module BrasilApi
         path = "#{BASE_URL}/ondas/#{city_code}"
         path += "/#{days}" unless days.nil?
 
-        request :get, path
+        request path
       end
     end
   end

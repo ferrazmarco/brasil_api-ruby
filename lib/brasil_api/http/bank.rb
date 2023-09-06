@@ -10,7 +10,7 @@ module BrasilApi
       #
       # @return [Array<Hash>]
       def all
-        request :get, BASE_URL
+        request BASE_URL
       end
 
       # Fetch a bank info given his code
@@ -18,7 +18,7 @@ module BrasilApi
       # @param code [Integer]
       # @return [Hash]
       def find(code)
-        request :get, "#{BASE_URL}/#{code}"
+        request "#{BASE_URL}/#{code}"
       end
     end
   end

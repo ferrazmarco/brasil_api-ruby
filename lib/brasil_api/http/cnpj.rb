@@ -11,7 +11,7 @@ module BrasilApi
       # @param cnpj [String]
       # @return [Hash]
       def find(cnpj)
-        request :get, "#{BASE_URL}/#{cnpj}"
+        request "#{BASE_URL}/#{cnpj}"
       end
     end
   end

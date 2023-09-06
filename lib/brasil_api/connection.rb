@@ -5,11 +5,8 @@ require "faraday"
 module BrasilApi
   # HTTP connection to Brasil API
   module Connection
-    def request(method, path, body = {}, params = {})
-      connection.send(method, path) do |req|
-        req.body = body
-        req.params = params
-      end.body
+    def request(path)
+      connection.get(path).body
     end
 
     private

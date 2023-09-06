@@ -11,7 +11,7 @@ module BrasilApi
       # @param zipcode [String]
       # @return [Hash]
       def find(zipcode)
-        request :get, "#{PATH}/#{zipcode}"
+        request "#{PATH}/#{zipcode}"
       end
     end
   end

@@ -10,7 +10,7 @@ module BrasilApi
       # @param year [Integer]
       # @return [Array<Hash>]
       def year(year)
-        request :get, "#{BASE_URL}/#{year}"
+        request "#{BASE_URL}/#{year}"
       end
     end
   end

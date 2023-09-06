@@ -10,7 +10,7 @@ module BrasilApi
       # @param ddd [Integer]
       # @return [Hash]
       def find(ddd)
-        request :get, "#{BASE_URL}/#{ddd}"
+        request "#{BASE_URL}/#{ddd}"
       end
     end
   end
