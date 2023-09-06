@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/ddd/v1/13
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 06 Sep 2023 01:30:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"126-kPXIolo3RViHqdIRXH6qH7uaxuw"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/ddd/v1/[ddd]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - gru1::sfo1::89jdh-1693963853983-f4117f599332
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6uh6Hm4mj7GXhupFf2RuTpmSB3UqeToXTxGLZHqPhdeq%2FKHo1NfS%2F6j%2BKhw5hxt8wYJJZxNcvHsCzKhUkmw2bcAJmz1JXsDtsw8lLC6RPG8hGnJO8Bupji7PM61QjrzZYtuu"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8022f307496d012c-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzdGF0ZSI6IlNQIiwiY2l0aWVzIjpbIlNFVEUgQkFSUkFTIiwiU8ODTyBWSUNFTlRFIiwiU0FOVE9TIiwiUkVHSVNUUk8iLCJQUkFJQSBHUkFOREUiLCJQRVJVw41CRSIsIlBFRFJPIERFIFRPTEVETyIsIlBBUklRVUVSQS1Bw4dVIiwiTU9OR0FHVcOBIiwiTUlSQUNBVFUiLCJKVVFVScOBIiwiSkFDVVBJUkFOR0EiLCJJVEFSSVJJIiwiSVRBTkhBw4lNIiwiSUxIQSBDT01QUklEQSIsIklHVUFQRSIsIkdVQVJVSsOBIiwiRUxET1JBRE8iLCJDVUJBVMODTyIsIkNBTkFOw4lJQSIsIkNBSkFUSSIsIkJFUlRJT0dBIl19
+  recorded_at: Wed, 06 Sep 2023 01:30:55 GMT
+recorded_with: VCR 6.2.0
