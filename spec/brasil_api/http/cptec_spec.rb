@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe BrasilApi::CPTEC do
+RSpec.describe BrasilApi::CPTEC do # rubocop:disable Metrics/BlockLength
   it "list all locations" do
     VCR.use_cassette("cptec/cities") do
       response = described_class.cities
