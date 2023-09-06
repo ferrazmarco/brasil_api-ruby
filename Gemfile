@@ -14,5 +14,3 @@ gem "rubocop", "~> 1.21"
 gem "faraday", "~> 2.7"
 
 gem "vcr", "~> 6.2"
-
-gem "webmock", "~> 3.19"
