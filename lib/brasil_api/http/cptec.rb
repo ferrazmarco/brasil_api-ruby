@@ -42,6 +42,18 @@ module BrasilApi
 
         request :get, path
       end
+
+      # fetch the ocean forecast given a city code
+      #
+      # @param city_code [Integer]
+      # @param days [Integer]
+      # @return [Hash]
+      def ocean_forecast(city_code, days = nil)
+        path = "#{BASE_URL}/ondas/#{city_code}"
+        path += "/#{days}" unless days.nil?
+
+        request :get, path
+      end
     end
   end
 end

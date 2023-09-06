@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/cptec/v1/ondas/241
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 06 Sep 2023 01:11:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"5c2-ug8RBsppU4IAVQtGJVVTrkCBZcc"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/cptec/v1/ondas/[cityCode]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - gru1::sfo1::d5pmz-1693962669570-c004ca3161ba
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7eiiFMVibpV2W98Jgfr6zJgfGol15mbboh9lhctO8Qd2ALWKmPgJUeWLWkFPXoWkSAWktOm0U7Fk9wPhM3iMeKcJAVq4Rse21wfyT5vS1H5Fte2EBdCoEMQfleM9PFk32Zab"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8022d61cbcf300ad-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjaWRhZGUiOiJSaW8gZGUgSmFuZWlybyIsImVzdGFkbyI6IlJKIiwiYXR1YWxpemFkb19lbSI6IjIwMjMtMDktMDQiLCJvbmRhcyI6W3siZGF0YSI6IjIwMjMtMDktMDQiLCJkYWRvc19vbmRhcyI6W3siaG9yYSI6IjAwOjAwWiIsInZlbnRvIjoxMi4xLCJkaXJlY2FvX3ZlbnRvIjoiTkUiLCJkaXJlY2FvX3ZlbnRvX2Rlc2MiOiJOb3JkZXN0ZSIsImFsdHVyYV9vbmRhIjoxLjgsImRpcmVjYW9fb25kYSI6Ik4iLCJkaXJlY2FvX29uZGFfZGVzYyI6Ik5vcnRlIiwiYWdpdGF0aW9uIjoiRnJhY28ifSx7ImhvcmEiOiIwMzowMFoiLCJ2ZW50byI6MTIuMiwiZGlyZWNhb192ZW50byI6Ik5FIiwiZGlyZWNhb192ZW50b19kZXNjIjoiTm9yZGVzdGUiLCJhbHR1cmFfb25kYSI6MS43LCJkaXJlY2FvX29uZGEiOiJOIiwiZGlyZWNhb19vbmRhX2Rlc2MiOiJOb3J0ZSIsImFnaXRhdGlvbiI6IkZyYWNvIn0seyJob3JhIjoiMDY6MDBaIiwidmVudG8iOjExLjcsImRpcmVjYW9fdmVudG8iOiJORSIsImRpcmVjYW9fdmVudG9fZGVzYyI6Ik5vcmRlc3RlIiwiYWx0dXJhX29uZGEiOjEuNywiZGlyZWNhb19vbmRhIjoiTiIsImRpcmVjYW9fb25kYV9kZXNjIjoiTm9ydGUiLCJhZ2l0YXRpb24iOiJGcmFjbyJ9LHsiaG9yYSI6IjA5OjAwWiIsInZlbnRvIjoxMSwiZGlyZWNhb192ZW50byI6Ik5FIiwiZGlyZWNhb192ZW50b19kZXNjIjoiTm9yZGVzdGUiLCJhbHR1cmFfb25kYSI6MS42LCJkaXJlY2FvX29uZGEiOiJOIiwiZGlyZWNhb19vbmRhX2Rlc2MiOiJOb3J0ZSIsImFnaXRhdGlvbiI6IkZyYWNvIn0seyJob3JhIjoiMTI6MDBaIiwidmVudG8iOjkuNywiZGlyZWNhb192ZW50byI6Ik5FIiwiZGlyZWNhb192ZW50b19kZXNjIjoiTm9yZGVzdGUiLCJhbHR1cmFfb25kYSI6MS41LCJkaXJlY2FvX29uZGEiOiJOIiwiZGlyZWNhb19vbmRhX2Rlc2MiOiJOb3J0ZSIsImFnaXRhdGlvbiI6IkZyYWNvIn0seyJob3JhIjoiMTU6MDBaIiwidmVudG8iOjkuMiwiZGlyZWNhb192ZW50byI6IkVORSIsImRpcmVjYW9fdmVudG9fZGVzYyI6IkzDqXMtbm9yZGVzdGUiLCJhbHR1cmFfb25kYSI6MS41LCJkaXJlY2FvX29uZGEiOiJTIiwiZGlyZWNhb19vbmRhX2Rlc2MiOiJTdWwiLCJhZ2l0YXRpb24iOiJGcmFjbyJ9LHsiaG9yYSI6IjE4OjAwWiIsInZlbnRvIjoxMC43LCJkaXJlY2FvX3ZlbnRvIjoiRU5FIiwiZGlyZWNhb192ZW50b19kZXNjIjoiTMOpcy1ub3JkZXN0ZSIsImFsdHVyYV9vbmRhIjoxLjYsImRpcmVjYW9fb25kYSI6IlMiLCJkaXJlY2FvX29uZGFfZGVzYyI6IlN1bCIsImFnaXRhdGlvbiI6IkZyYWNvIn0seyJob3JhIjoiMjE6MDBaIiwidmVudG8iOjEzLjUsImRpcmVjYW9fdmVudG8iOiJORSIsImRpcmVjYW9fdmVudG9fZGVzYyI6Ik5vcmRlc3RlIiwiYWx0dXJhX29uZGEiOjEuOCwiZGlyZWNhb19vbmRhIjoiTiIsImRpcmVjYW9fb25kYV9kZXNjIjoiTm9ydGUiLCJhZ2l0YXRpb24iOiJGcmFjbyJ9XX1dfQ==
+  recorded_at: Wed, 06 Sep 2023 01:11:10 GMT
+recorded_with: VCR 6.2.0

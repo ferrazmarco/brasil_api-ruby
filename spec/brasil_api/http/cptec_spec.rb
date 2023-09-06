@@ -35,7 +35,7 @@ RSpec.describe BrasilApi::CPTEC do
     end
   end
 
-  it "return the weather forecast of a city" do
+  it "fetch the weather forecast of a city" do
     VCR.use_cassette("cptec/forecast") do
       response = described_class.forecast(4178)
 
@@ -43,9 +43,25 @@ RSpec.describe BrasilApi::CPTEC do
     end
   end
 
-  it "return the weather forecast for a range of days" do
+  it "fetch the weather forecast for a range of days" do
     VCR.use_cassette("cptec/forecast_days") do
       response = described_class.forecast(4178, 3)
+
+      expect(response).to be_a(Hash)
+    end
+  end
+
+  it "fetch the ocean forecast for a city" do
+    VCR.use_cassette("cptec/ocean_forecast") do
+      response = described_class.ocean_forecast(241)
+
+      expect(response).to be_a(Hash)
+    end
+  end
+
+  it "fetch the ocean forecast for a range of days" do
+    VCR.use_cassette("cptec/ocean_forecast_days") do
+      response = described_class.ocean_forecast(241, 4)
 
       expect(response).to be_a(Hash)
     end
