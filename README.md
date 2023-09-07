@@ -61,6 +61,9 @@ BrasilApi::Realtor.find('02332886000104')
 
 ```ruby
 BrasilApi::CPTEC.cities
+```
+
+```ruby
 BrasilApi::CPTEC.cities('São Paulo')
 ```
 
@@ -74,11 +77,17 @@ BrasilApi::CPTEC.weather_airports("SBAR")
 
 ```ruby
 BrasilApi::CPTEC.forecast(4178)
+```
+
+```ruby
 BrasilApi::CPTEC.forecast(4178, 3)
 ```
 
 ```ruby
 BrasilApi::CPTEC.ocean_forecast(241)
+```
+
+```ruby
 BrasilApi::CPTEC.ocean_forecast(241, 3)
 ```
 
@@ -102,11 +111,17 @@ BrasilApi::FIPE.brands
 
 ```ruby
 BrasilApi::FIPE.brands_by(type: "carros")
+```
+
+```ruby
 BrasilApi::FIPE.brands_by(type: "carros", fipe_table: 271)
 ```
 
 ```ruby
 BrasilApi::FIPE.prices_by(fipe_code: "017092-5")
+```
+
+```ruby
 BrasilApi::FIPE.prices_by(fipe_code: "017092-5", fipe_table: 300)
 ```
 
