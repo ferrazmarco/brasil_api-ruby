@@ -1,39 +1,116 @@
-# BrasilApi
+<h1 align="center"><img src="https://raw.githubusercontent.com/BrasilAPI/BrasilAPI/master/public/brasilapi-logo-small.png" alt="Logo da BrasilAPI"></h1>
 
-TODO: Delete this and the text below, and describe your gem
+<div align="center">
+  <p>
+    <strong>Vamos transformar o Brasil em uma API?</strong>
+  </p>
+</div>
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/brasil_api`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-## Installation
+Simples cliente para interagir com a BrasilApi. Mais informações através desse [link](https://brasilapi.com.br/docs).
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+## Instalação
 
-Install the gem and add to the application's Gemfile by executing:
+Instale a gem e adicione como dependência de sua aplicação:
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ bundle add brasil_api
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+Se não estiver usando bundler para gerenciar suas depências, instale a gem executando:
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ gem install brasil_api
 
-## Usage
+## Uso
 
-TODO: Write usage instructions here
+### Bancos
 
-## Development
+```ruby
+BrasilApi::Bank.all
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+```ruby
+BrasilApi::Bank.find(1)
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+### CEP
 
-## Contributing
+```ruby
+BrasilApi::CEP.find('89010025')
+```
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/marco-a-ferraz/brasil_api-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/brasil_api/blob/main/CODE_OF_CONDUCT.md).
+```ruby
+BrasilApi::CEPV2.find('89010025')
+```
 
-## License
+### CNPJ
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+```ruby
+BrasilApi::CNPJ.find('19131243000197')
+```
 
-## Code of Conduct
+### Corretoras
 
-Everyone interacting in the BrasilApi project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/brasil_api/blob/main/CODE_OF_CONDUCT.md).
+```ruby
+BrasilApi::Realtor.all
+```
+
+```ruby
+BrasilApi::Realtor.find('02332886000104')
+```
+
+### CPTEC
+
+```ruby
+BrasilApi::CPTEC.cities
+BrasilApi::CPTEC.cities('São Paulo')
+```
+
+```ruby
+BrasilApi::CPTEC.weather_capitals
+```
+
+```ruby
+BrasilApi::CPTEC.weather_airports("SBAR")
+```
+
+```ruby
+BrasilApi::CPTEC.forecast(4178)
+BrasilApi::CPTEC.forecast(4178, 3)
+```
+
+```ruby
+BrasilApi::CPTEC.ocean_forecast(241)
+BrasilApi::CPTEC.ocean_forecast(241, 3)
+```
+
+### DDD
+
+```ruby
+BrasilApi::DDD.find("11")
+```
+
+### Feriados Nacionais
+
+```ruby
+BrasilApi::Holiday.year(2023)
+```
+
+### FIPE
+
+```ruby
+BrasilApi::FIPE.brands
+```
+
+```ruby
+BrasilApi::FIPE.brands_by(type: "carros")
+BrasilApi::FIPE.brands_by(type: "carros", fipe_table: 271)
+```
+
+```ruby
+BrasilApi::FIPE.prices_by(fipe_code: "017092-5")
+BrasilApi::FIPE.prices_by(fipe_code: "017092-5", fipe_table: 300)
+```
+
+```ruby
+BrasilApi::FIPE.tables
+```
+
