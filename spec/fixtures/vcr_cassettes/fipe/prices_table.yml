@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/fipe/preco/v1/017092-5?tabela_referencia=300
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 07 Sep 2023 01:19:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"359-DpzbmsLXHV55HKbuBk6Qgxyk8uM"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/fipe/preco/v1/[fipeCode]"
+      X-Vercel-Cache:
+      - MISS
+      X-Vercel-Id:
+      - gru1::sfo1::j4sqb-1694049595619-45b1487cbd50
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=WYFNlaH7Dz0eWnOUtDE4xfh3l37Jay2VOj0pjkMoC1Y7sJfDlUYw0n4nNt3wR82Rzy4sDKvFG0UxfOXd6cSJOql6Sp5GbMawzFgnavVsDhbv9SDcRXzHnBq%2F4S0Wl33yNZ82"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 802b205489b201a4-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"valor":"R$ 127.466,00","marca":"Jeep","modelo":"Renegade T270 1.3
+        TB 4x2 Flex Aut.","anoModelo":32000,"combustivel":"Gasolina","codigoFipe":"017092-5","mesReferencia":"agosto
+        de 2023 ","tipoVeiculo":1,"siglaCombustivel":"G","dataConsulta":"quarta-feira,
+        6 de setembro de 2023 22:19"},{"valor":"R$ 121.730,00","marca":"Jeep","modelo":"Renegade
+        T270 1.3 TB 4x2 Flex Aut.","anoModelo":2024,"combustivel":"Gasolina","codigoFipe":"017092-5","mesReferencia":"agosto
+        de 2023 ","tipoVeiculo":1,"siglaCombustivel":"G","dataConsulta":"quarta-feira,
+        6 de setembro de 2023 22:19"},{"valor":"R$ 116.931,00","marca":"Jeep","modelo":"Renegade
+        T270 1.3 TB 4x2 Flex Aut.","anoModelo":2023,"combustivel":"Gasolina","codigoFipe":"017092-5","mesReferencia":"agosto
+        de 2023 ","tipoVeiculo":1,"siglaCombustivel":"G","dataConsulta":"quarta-feira,
+        6 de setembro de 2023 22:19"}]'
+  recorded_at: Thu, 07 Sep 2023 01:19:58 GMT
+recorded_with: VCR 6.2.0

@@ -5,8 +5,12 @@ require "faraday"
 module BrasilApi
   # HTTP connection to Brasil API
   module Connection
-    def request(path)
-      connection.get(path).body
+    def request(path, query = {})
+      query.delete_if { |_k, v| v.nil? || v.to_s.empty? }
+
+      connection.get(path) do |req|
+        req.params = query
+      end.body
     end
 
     private

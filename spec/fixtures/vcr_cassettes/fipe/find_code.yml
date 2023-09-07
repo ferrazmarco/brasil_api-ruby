@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://brasilapi.com.br/api/fipe/marcas/v1/carros?tabela_referencia=271
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 07 Sep 2023 01:09:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '1254'
+      Cache-Control:
+      - max-age=0, public
+      Etag:
+      - W/"b31-KUzrINwiAsnLGwWiuJBSoSLa1Fc"
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Matched-Path:
+      - "/api/fipe/marcas/v1/[vehicleType]"
+      X-Vercel-Cache:
+      - HIT
+      X-Vercel-Id:
+      - gru1::sfo1::7vrrv-1694048962387-d1bb225d9e34
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rp6kUKyMEsD6tsxN6wPjG%2BiERbghsFx%2BPMM%2B9aVkLGehT3Jud109ORzYQgEmQBMB4XY49jagnXEZEuRTdG%2B8JhVKrobP46YZo56ZrI47Dj66HCkmxaBYwQPWjfQMhrFZiot4"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 802b10dec8b31a88-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibm9tZSI6IkFjdXJhIiwidmFsb3IiOiIxIn0seyJub21lIjoiQWdyYWxlIiwidmFsb3IiOiIyIn0seyJub21lIjoiQWxmYSBSb21lbyIsInZhbG9yIjoiMyJ9LHsibm9tZSI6IkFNIEdlbiIsInZhbG9yIjoiNCJ9LHsibm9tZSI6IkFzaWEgTW90b3JzIiwidmFsb3IiOiI1In0seyJub21lIjoiQXVkaSIsInZhbG9yIjoiNiJ9LHsibm9tZSI6IkJNVyIsInZhbG9yIjoiNyJ9LHsibm9tZSI6IkJSTSIsInZhbG9yIjoiOCJ9LHsibm9tZSI6IkNhZGlsbGFjIiwidmFsb3IiOiIxMCJ9LHsibm9tZSI6IkNCVCBKaXBlIiwidmFsb3IiOiIxMSJ9LHsibm9tZSI6IkNocnlzbGVyIiwidmFsb3IiOiIxMiJ9LHsibm9tZSI6IkNpdHJvw6tuIiwidmFsb3IiOiIxMyJ9LHsibm9tZSI6IkNyb3NzIExhbmRlciIsInZhbG9yIjoiMTQifSx7Im5vbWUiOiJEYWV3b28iLCJ2YWxvciI6IjE1In0seyJub21lIjoiRGFpaGF0c3UiLCJ2YWxvciI6IjE2In0seyJub21lIjoiRG9kZ2UiLCJ2YWxvciI6IjE3In0seyJub21lIjoiRW5nZXNhIiwidmFsb3IiOiIxOCJ9LHsibm9tZSI6IkVudmVtbyIsInZhbG9yIjoiMTkifSx7Im5vbWUiOiJGZXJyYXJpIiwidmFsb3IiOiIyMCJ9LHsibm9tZSI6IkZpYXQiLCJ2YWxvciI6IjIxIn0seyJub21lIjoiRm9yZCIsInZhbG9yIjoiMjIifSx7Im5vbWUiOiJHTSAtIENoZXZyb2xldCIsInZhbG9yIjoiMjMifSx7Im5vbWUiOiJHdXJnZWwiLCJ2YWxvciI6IjI0In0seyJub21lIjoiSG9uZGEiLCJ2YWxvciI6IjI1In0seyJub21lIjoiSHl1bmRhaSIsInZhbG9yIjoiMjYifSx7Im5vbWUiOiJJc3V6dSIsInZhbG9yIjoiMjcifSx7Im5vbWUiOiJKYWd1YXIiLCJ2YWxvciI6IjI4In0seyJub21lIjoiSmVlcCIsInZhbG9yIjoiMjkifSx7Im5vbWUiOiJKUFgiLCJ2YWxvciI6IjMwIn0seyJub21lIjoiS2lhIE1vdG9ycyIsInZhbG9yIjoiMzEifSx7Im5vbWUiOiJMYWRhIiwidmFsb3IiOiIzMiJ9LHsibm9tZSI6IkxhbmQgUm92ZXIiLCJ2YWxvciI6IjMzIn0seyJub21lIjoiTGV4dXMiLCJ2YWxvciI6IjM0In0seyJub21lIjoiTG90dXMiLCJ2YWxvciI6IjM1In0seyJub21lIjoiTWFzZXJhdGkiLCJ2YWxvciI6IjM2In0seyJub21lIjoiTWF0cmEiLCJ2YWxvciI6IjM3In0seyJub21lIjoiTWF6ZGEiLCJ2YWxvciI6IjM4In0seyJub21lIjoiTWVyY2VkZXMtQmVueiIsInZhbG9yIjoiMzkifSx7Im5vbWUiOiJNZXJjdXJ5IiwidmFsb3IiOiI0MCJ9LHsibm9tZSI6Ik1pdHN1YmlzaGkiLCJ2YWxvciI6IjQxIn0seyJub21lIjoiTWl1cmEiLCJ2YWxvciI6IjQyIn0seyJub21lIjoiTmlzc2FuIiwidmFsb3IiOiI0MyJ9LHsibm9tZSI6IlBldWdlb3QiLCJ2YWxvciI6IjQ0In0seyJub21lIjoiUGx5bW91dGgiLCJ2YWxvciI6IjQ1In0seyJub21lIjoiUG9udGlhYyIsInZhbG9yIjoiNDYifSx7Im5vbWUiOiJQb3JzY2hlIiwidmFsb3IiOiI0NyJ9LHsibm9tZSI6IlJlbmF1bHQiLCJ2YWxvciI6IjQ4In0seyJub21lIjoiUm92ZXIiLCJ2YWxvciI6IjQ5In0seyJub21lIjoiU2FhYiIsInZhbG9yIjoiNTAifSx7Im5vbWUiOiJTYXR1cm4iLCJ2YWxvciI6IjUxIn0seyJub21lIjoiU2VhdCIsInZhbG9yIjoiNTIifSx7Im5vbWUiOiJTdWJhcnUiLCJ2YWxvciI6IjU0In0seyJub21lIjoiU3V6dWtpIiwidmFsb3IiOiI1NSJ9LHsibm9tZSI6IlRveW90YSIsInZhbG9yIjoiNTYifSx7Im5vbWUiOiJUcm9sbGVyIiwidmFsb3IiOiI1NyJ9LHsibm9tZSI6IlZvbHZvIiwidmFsb3IiOiI1OCJ9LHsibm9tZSI6IlZXIC0gVm9sa3NXYWdlbiIsInZhbG9yIjoiNTkifSx7Im5vbWUiOiJXYWxrIiwidmFsb3IiOiIxMjAifSx7Im5vbWUiOiJCdWdyZSIsInZhbG9yIjoiMTIzIn0seyJub21lIjoiU1NBTkdZT05HIiwidmFsb3IiOiIxMjUifSx7Im5vbWUiOiJMT0JJTkkiLCJ2YWxvciI6IjEyNyJ9LHsibm9tZSI6IkNIQU5BIiwidmFsb3IiOiIxMzYifSx7Im5vbWUiOiJNYWhpbmRyYSIsInZhbG9yIjoiMTQwIn0seyJub21lIjoiRUZGQSIsInZhbG9yIjoiMTQ3In0seyJub21lIjoiRmlicmF2YW4iLCJ2YWxvciI6IjE0OSJ9LHsibm9tZSI6IkhBRkVJIiwidmFsb3IiOiIxNTIifSx7Im5vbWUiOiJHUkVBVCBXQUxMIiwidmFsb3IiOiIxNTMifSx7Im5vbWUiOiJKSU5CRUkiLCJ2YWxvciI6IjE1NCJ9LHsibm9tZSI6Ik1JTkkiLCJ2YWxvciI6IjE1NiJ9LHsibm9tZSI6InNtYXJ0IiwidmFsb3IiOiIxNTcifSx7Im5vbWUiOiJDYW9hIENoZXJ5IiwidmFsb3IiOiIxNjEifSx7Im5vbWUiOiJXYWtlIiwidmFsb3IiOiIxNjMifSx7Im5vbWUiOiJUQUMiLCJ2YWxvciI6IjE2NSJ9LHsibm9tZSI6Ik1HIiwidmFsb3IiOiIxNjcifSx7Im5vbWUiOiJMSUZBTiIsInZhbG9yIjoiMTY4In0seyJub21lIjoiRnliZXIiLCJ2YWxvciI6IjE3MCJ9LHsibm9tZSI6IkxBTUJPUkdISU5JIiwidmFsb3IiOiIxNzEifSx7Im5vbWUiOiJKQUMiLCJ2YWxvciI6IjE3NyJ9LHsibm9tZSI6IkNIQU5HQU4iLCJ2YWxvciI6IjE4MiJ9LHsibm9tZSI6IlNISU5FUkFZIiwidmFsb3IiOiIxODMifSx7Im5vbWUiOiJSQU0iLCJ2YWxvciI6IjE4NSJ9LHsibm9tZSI6IlJFTFkiLCJ2YWxvciI6IjE4NiJ9LHsibm9tZSI6IkFTVE9OIE1BUlRJTiIsInZhbG9yIjoiMTg5In0seyJub21lIjoiRk9UT04iLCJ2YWxvciI6IjE5MCJ9LHsibm9tZSI6IlJvbGxzLVJveWNlIiwidmFsb3IiOiIxOTUifSx7Im5vbWUiOiJHRUVMWSIsInZhbG9yIjoiMTk5In0seyJub21lIjoiQmFieSIsInZhbG9yIjoiMjA3In0seyJub21lIjoiSVZFQ08iLCJ2YWxvciI6IjIwOCJ9LHsibm9tZSI6Ik1jbGFyZW4iLCJ2YWxvciI6IjIxMSJ9LHsibm9tZSI6IkhJVEVDSCBFTEVDVFJJQyIsInZhbG9yIjoiMjE0In1d
+  recorded_at: Thu, 07 Sep 2023 01:09:22 GMT
+recorded_with: VCR 6.2.0
