@@ -16,6 +16,6 @@ module BrasilApi
   end
 end
 
-Dir["./lib/brasil_api/http/**/*.rb"].sort.each do |file|
+Dir[File.join(__dir__, "brasil_api/http/**/*.rb")].sort.each do |file|
   require file
 end
